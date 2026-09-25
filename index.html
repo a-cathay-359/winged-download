@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Winged Download</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  }
+
+  /* 顶栏：紧凑，宽度自适应内容 */
+  .topbar {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;    /* 内边距适中，不胖不瘦 */
+    background: #ffffff;
+    width: fit-content;
+  }
+
+  /* 图标大小恢复到适中 */
+  .logo-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* 字号调回 16px，视觉和 Winged Maps 一致 */
+  .brand {
+    font-size: 16px;       /* 不大不小，刚合适 */
+    font-weight: 800;      /* 保持极粗，这是灵魂 */
+    color: #111827;
+    margin-left: 10px;
+    letter-spacing: -.2px;
+  }
+
+  /* 竖线也相应收回来 */
+  .divider {
+    width: 1px;
+    height: 18px;
+    background-color: #d1d5db;
+    margin-left: 14px;
+  }
+
+  /* 下方黑色：依然铺满到底 */
+  .content-black {
+    flex: 1;
+    background-color: #000000;
+  }
+</style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4V16M12 16L6 10M12 16L18 10M5 20H19"
+              stroke="#2563eb" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <span class="brand">Winged Download</span>
+    <div class="divider"></div>
+  </header>
+
+  <main class="content-black"></main>
+
+</body>
+</html>
